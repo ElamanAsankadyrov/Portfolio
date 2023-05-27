@@ -1,0 +1,596 @@
+body {
+    margin: 0;
+    font:normal 75% Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+canvas {
+    display: block;
+}
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #252934;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+.count-particles{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.js-count-particles{
+    font-size: 1.1em;
+} 
+
+#stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles{
+    border-radius: 0 0 3px 3px;
+} 
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #262626;
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navMenu {
+    display: flex;
+    align-self: center;
+    margin-right: auto;
+    gap: 40px;
+}
+
+.navLinks {
+    transition: 0.7s ease;
+}
+
+.navLinks:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.first-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: whitesmoke;
+    font-size: 40px;
+    text-align: center;
+    width: 800px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    padding: 15px;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.lanBtn {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.btn-view:hover {
+    background-color: #C1D0B5;
+}
+
+.aLink {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.aboutScreen {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
+
+.aboutScreenOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 10px;
+}
+
+.aboutScreenTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.aboutIcon {
+    display: flex;
+    align-self: center;
+}
+
+.aboutHeader {
+    display: flex;
+    align-self: center;
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutText {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutThree {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.aboutPhoto {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+    background-origin: padding-box;
+}
+
+.aboutMeTextContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.aboutMeText, .aboutMeTextDe {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutSkillText {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+.projectsHeader, .myself  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contactHeader {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 15px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sentText {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.slideContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btnSlide {
+    background: #E9EDC9;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slideDe {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btnSlide:hover {
+    background-color: #F6FFDE;
+}
+
+.viewButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.viewBtn {
+    background: #E9EDC9;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px;
+    width: 450px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.viewBtn:hover {
+    background-color: #F6FFDE;
+}
+
+.contactContainer {
+    background-color: #E9EDC9;
+    margin: 0;
+    padding: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.textInputEmail {
+    background-color: #FEFAE0;
+    border: none;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.textInputMessage {
+    background-color: #FEFAE0;
+    border: none;
+    width: 500px;
+    height: 120px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.emailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 1px;
+}
+
+.emailFont {
+    display: flex;
+    align-self: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 5px;
+}
+
+.emailBtn {
+    width: 500px;
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    background-color: #FEFAE0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.emailBtn:hover {
+    background-color: #F6FFDE;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #F6FFDE;
+}
+
+.icons {
+    padding: 20px;
+}
+
+.textFooter {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+@media all and (max-width:500px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active  .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active  .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active  .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navItems {
+        margin: 16px 0;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+
+    body {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .btn-view {
+        font-size: 15px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .projectsHeader, .myself{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .contactHeader  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        padding: 15px;
+        font-size: 25px;
+        margin: 1;
+    }
+
+    .sentText {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .aboutScreenOne {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aboutScreenTwo {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .aboutThree {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projectsContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .picture {
+        width: 250px;
+        height: 200px;
+    }
+
+    .btnSlide {
+        background: #FFF8D6;
+        font-size: 15px;
+        padding: 5px;
+        margin: 5px;
+        height: 180px;
+    }
+
+
+    .slideDe {
+        font-size: 10px;
+    }
+
+    .viewBtn {
+        background: #FFF8D6;
+        font-size: 15px;
+        padding: 5px;
+        margin: 5px;
+        width: 170px;
+    }
+
+    .emailFont {
+        display: flex;
+        align-self: center;
+        font-size: 15px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .textInputEmail, .textInputMessage, .emailBtn {
+        width: 290px;
+    }
+
+    .emailBtn {
+        font-size: 20px;
+    }
+
+    .aboutSkillText {
+        font-size: 20px;
+    }
+
+    .aboutMeText {
+        font-size: 15px;
+    }
+
+    .aboutMeTextDe {
+        font-size: 15px;
+    }
+
+    .textInputEmail {
+        background-color:  #FEFAE0;
+        border: none;
+        width: 290px;
+        height: 40px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .textInputMessage {
+        background-color: #FEFAE0;
+        border: none;
+        width: 290px;
+        height: 80px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .textFooter {
+        font-size: 15px;
+    }
+
+    .imgIcon {
+        width: 35px;
+    }
+
+    .footerContainer {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .icons {
+        padding: 15px;
+    }
+}
