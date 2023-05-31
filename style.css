@@ -11,7 +11,7 @@ canvas {
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #252934;
     background-image: url("");
     background-repeat: no-repeat;
@@ -404,12 +404,43 @@ footer {
     font-family: 'Raleway', sans-serif;
 }
 
+@media all and (max-width:800px) {
+    h1 {
+        font-size: 35px;
+        width: 450px;
+    }
+
+    .aboutScreenOne, .aboutThree {
+        flex-wrap: wrap;
+    }
+
+    .picture {
+        width: 450px;
+        height: 400px;
+    }
+
+    .btnSlide {
+        background: #FFF8D6;
+        font-size: 20px;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .viewBtn {
+        font-size: 25px;
+    }
+
+    .sentText {
+        text-align: center;
+    }
+}
+
 
 @media all and (max-width:500px) {
     #particles-js {
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: #252934;
         background-image: url("");
         background-repeat: no-repeat;
