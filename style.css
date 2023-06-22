@@ -18,6 +18,7 @@ canvas {
     background-size: cover;
     background-position: 50% 50%;
     margin: 0;
+    height: 100vh;
 }
 
 
@@ -421,6 +422,7 @@ footer {
         background-size: cover;
         background-position: 50% 50%;
         margin: 0;
+        height: 100vh;
     }
 
     h1 {
@@ -465,6 +467,7 @@ footer {
         background-size: cover;
         background-position: 50% 50%;
         margin: 0;
+        height: 100vh;
     }
 
     .hamburger {
