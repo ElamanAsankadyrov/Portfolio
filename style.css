@@ -419,6 +419,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
+        margin: 0;
     }
 
     h1 {
@@ -462,6 +463,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
+        margin: 0;
     }
 
     .hamburger {
