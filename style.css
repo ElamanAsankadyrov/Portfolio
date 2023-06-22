@@ -328,7 +328,7 @@ h1  {
 .contactContainer {
     background-color: #E9EDC9;
     margin: 0;
-    padding: 30px;
+    padding: 40px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -404,11 +404,16 @@ footer {
     font-family: 'Raleway', sans-serif;
 }
 
+#projectID {
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
 @media all and (max-width:800px) {
     #particles-js {
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: #252934;
         background-image: url("");
         background-repeat: no-repeat;
@@ -451,7 +456,7 @@ footer {
     #particles-js {
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: #252934;
         background-image: url("");
         background-repeat: no-repeat;
